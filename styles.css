@@ -27,11 +27,12 @@ html{
     font-size: 17px;
     overflow: hidden;
     border-bottom: 1px solid rgba(20, 19, 19, 0.3);
+    background-color: var(--accent);
 }
 
 .topnav a {
   padding: .5em;
-  color: var(--text);
+  color: var(--background);
   text-decoration: none;
 }
 
@@ -69,7 +70,7 @@ html{
   display: block;
   margin: auto;
   width: 25%;
-  padding: 25px;
+  padding: 50px;
 }
 
 .buttons-container {
@@ -93,6 +94,20 @@ html{
 .btn-rect-to-round:hover {  border-radius: 60px;  color: rgb(255, 255, 255) !important;}  
 .btn-rect-to-round--accent {  border: 2px solid var(--accent);  color: var(--accent) !important;}  
 .btn-rect-to-round--accent:hover {  border-color: var(--accent);  background: var(--accent);}  
+
+
+.headshot {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.headshot-img {
+  height: 35%;
+  width: 35%;
+  padding: 50px;
+}
 
 body {
   font-family: 'Inter';
