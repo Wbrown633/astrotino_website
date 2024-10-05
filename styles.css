@@ -109,6 +109,23 @@ html{
   padding: 50px;
 }
 
+.astrotino-explanation-container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px;
+}
+
+.grid-image {
+  display: flex;
+  width: 100%;
+}
+
+.grid-text{
+  padding: 20px;
+}
+
 body {
   font-family: 'Inter';
   font-weight: 400;
