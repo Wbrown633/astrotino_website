@@ -30,7 +30,7 @@ html{
 }
 
 .topnav a {
-  padding: .5em;
+  padding: 0.5em;
   color: var(--background);
   text-decoration: none;
 }
