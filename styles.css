@@ -117,12 +117,29 @@ html{
 }
 
 .grid-image {
-  display: flex;
   width: 100%;
 }
 
 .grid-text{
   padding: 20px;
+}
+
+.contact-container{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px;
+}
+
+.logo-grid-image {
+  width: 20%;
+  height: 20%;
+}
+
+.logo-grid-text {
+  padding: 20px;
+  width: 10%;
 }
 
 body {
