@@ -3,6 +3,8 @@ layout: post
 author: Will
 ---
 
+## Getting a Website Done
+
 To follow up on my first post about the The Cult of Done Manifesto, I wanted to talk about the creation of this website as a bit of an example of that logic and how I use it to try to stay on track during projects. Specifically the blog section.
 
 At the beginning of the project I had a very simple goal. I wanted a website I could point people towards to advertise my business. At the start I imagined that site should include:
@@ -15,9 +17,9 @@ After some very brief research I determined that this should be possible with th
 
 However, the more I looked into setting up the blog section, the more I got a bit overwhelmed and felt like I was getting pulled away from the main goal of the project. Pulled down into rabbit holes of CMSes, self hosting vs paid, static website generators, frameworks, and all of the other technology that can be used to make a modern website. All of which seemed to have their own merits for the long term, but my goal was to be done more than to be correct or scalable.
 
-So my goal for the project has shifted from : “get a website working at my domain that I can point people to with my business cards”. To: “maybe it should have a blog section, where I can better develop my thoughts through writing and share them.” In that moment I added quite a bit of complexity, but I didn’t know enough about web dev to know that! [^1] As I began to research things further, I got that sinking feeling. The feeling any developer gets when they realize their new pet feature is producing the dreaded “scope creep”. 
+So my goal for the project has shifted from : “get a website working at my domain that I can point people to with my business cards”. To: “maybe it should have a blog section, where I can better develop my thoughts through writing and share them.” In that moment I added quite a bit of complexity, but I didn’t know enough about web dev to know that![^1] As I began to research things further, I got that sinking feeling. The feeling any developer gets when they realize their new pet feature is producing the dreaded “scope creep”. 
 
-In honor of the “Cult of Done” I asked myself what is the shortest possible path to get from where I am now: a website that is purely CSS and HTML hosted on github pages. To where I want to be: a website that is purely CSS and HTML hosted on github pages, with a blog written in markdown! [^2] The answer of course was: read the docs!
+In honor of the “Cult of Done” I asked myself what is the shortest possible path to get from where I am now: a website that is purely CSS and HTML hosted on github pages. To where I want to be: a website that is purely CSS and HTML hosted on github pages, with a blog written in markdown![^2] The answer of course was: read the docs!
 
 It turns out that under the hood “Github Pages” is already powered by Jekyll. After reading up a bit on Jekyll I had the distinct realization that all of the tools were in place, and I just needed to understand how to connect the "wires". I find this is a common feeling if you venture even slightly off of the well trodden path. Or as some might say the “smart” or “sensible” path. After a few more hours of research, work, and installing Jekyll for local testing,  I was able to create the blog that you are reading. The final product is still 90% raw HTML and CSS for the landing page, contact, and about pages. Jekyll only really touches the blog section and handles the posts. All of the code is available for perusal on the public [github repo](https://github.com/Wbrown633/astrotino_website). It's all hosted through github pages, which will host static web pages for free! I think there are quite a few improvements that can be made to the code if I get a firmer grasp on Jekyll, but remember there is no editing stage! That will have to wait for another project. 
 
@@ -38,6 +40,6 @@ Some things I learned along the way:
 
 Thanks for reading if you made it this far. My goal is to keep posts at a quick read but still meaty enough to be worth your time! If you're interested in my help with your next project please reach out at any of the links on the contact page!
 
-[^1] for a total web beginner such as myself, a simple blog is trivial for anyone with experience of course
+[^1]: For a total web beginner such as myself, a simple blog is trivial for anyone with experience of course
 
- [^2] I should mention if I wrote the posts in raw HTML I certainly could have still used my original setup. But I really wanted to edit the posts in markdown (surely due at least in part to the brainwashing the wonderful podcast Cortex has done to me over the years). For a while I considered converting my markdown posts to HTML locally in a bash script or something similar using [pandoc](https://pandoc.org) (a cool tool I found during the research process!). But I ended up going with the more standard route. I think either would work but I went with the one that didn't feel like it was fighting with the tools as much.
+[^2]: I should mention if I wrote the posts in raw HTML I certainly could have still used my original setup. But I really wanted to edit the posts in markdown (surely due at least in part to the brainwashing the wonderful podcast Cortex has done to me over the years). For a while I considered converting my markdown posts to HTML locally in a bash script or something similar using [pandoc](https://pandoc.org) (a cool tool I found during the research process!). But I ended up going with the more standard route. I think either would work but I went with the one that didn't feel like it was fighting with the tools as much.
