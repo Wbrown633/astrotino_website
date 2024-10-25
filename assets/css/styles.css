@@ -112,7 +112,7 @@ html{
 .astrotino-explanation-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: baseline;
   padding: 20px;
@@ -132,6 +132,7 @@ html{
 .grid-text{
   padding: 20px;
   max-width: 300px;
+  align-content: center;
 }
 
 .contact-container{
