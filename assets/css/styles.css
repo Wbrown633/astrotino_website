@@ -110,12 +110,17 @@ html{
 }
 
 .astrotino-explanation-container {
-  display: grid;
-  grid-template-columns: 
-    repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: baseline;
   padding: 20px;
+}
+
+.about-picture-and-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .grid-image {
@@ -126,6 +131,7 @@ html{
 
 .grid-text{
   padding: 20px;
+  max-width: 300px;
 }
 
 .contact-container{
