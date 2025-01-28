@@ -130,6 +130,19 @@ function drawPath(factor1, factor2) {
       linejoin: "round"
     })
     .fill("none");
+
+
+
+      // Get the total length of the path
+  const length = path.length();
+
+  // Set the stroke-dasharray and stroke-dashoffset properties
+  path.attr({
+    "stroke-dasharray": length,
+    "stroke-dashoffset": length
+  });
+
+  path.animate(2000, "<").attr({ "stroke-dashoffset": 0 });
 }
 
 // draw a straight vertical line at sqrt(n)
