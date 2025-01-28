@@ -249,6 +249,9 @@ Another helpful visualization is to pair off the factors for a given value of `N
 
 The interactive animation below demonstrates this. Enter any number between 6 and 100 and click the buttons to see the number line, factors, and lime green line for the square root of N. Notice how the paths between factors always cross over the green line drawn by the square root of N. (Numbers with few factors are pretty boring, but numbers with lots of factors like 24, 36, etc are the most interesting!)
 
+<br>
+
+
 *Note: This should work fine on mobile, but is a bit easier to see on a larger screen*
 
 <br>
