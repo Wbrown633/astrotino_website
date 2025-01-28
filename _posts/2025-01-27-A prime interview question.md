@@ -104,6 +104,10 @@ for (int i; i++, i < N) {
 
 Second, a refresher on the `%` or modulo operator. The `%` operator returns the **remainder** of the division of two numbers. For example if you open up a [python REPL](https://realpython.com/python-repl/) you get the following: 
 
+<br>
+<br>
+
+
 ```python
 >>> 15 % 3
 0
@@ -115,14 +119,27 @@ Traceback (most recent call last):
 ZeroDivisionError: integer division or modulo by zero
 ```
 
+<br>
+<br>
+
 We care about numbers that are **evenly divisible**. Or put more technically, have **no remainder**. So we can update our code to say:
+
+<br>
+<br>
 
 ```python
 for i in range(2, N):
 	N % i == 0
 ```
 
+<br>
+<br>
+
 And based on the input we don't just want to spit out the result for every number in the list, we want to ensure that this holds true for every number that we checked along the way. And remember that if this statement is `True` for even a single value we know that `N` is not prime. This type of logic is sometimes called "short circuiting", because we don't have to finish the rest of loop. We know based on what we have seen what the result we be, **regardless of the rest of the numbers in the range**. So we basically get to take a shortcut and save some work (foreshadowing). Neat!  That would look like this:
+
+
+<br>
+<br>
 
 ```python
 def check_if_N_is_prime(N):
@@ -138,6 +155,9 @@ def check_if_N_is_prime(N):
 	return True
 	
 ```
+
+<br>
+<br>
 
 To get our short circuiting logic working correctly, we needed to add all of our logic into a function, but other than that nothing else has changed. And there you have it! this is a function that will check if a given number `N` is prime.
 
@@ -229,7 +249,8 @@ Another helpful visualization is to pair off the factors for a given value of `N
 
 The interactive animation below demonstrates this. Enter any number between 6 and 100 and click the buttons to see the number line, factors, and square root of N. Notice how the paths between factors always cross over the line drawn by the square root of N. (Numbers with few factors are pretty boring, but numbers with lots of factors like 24, 36, etc are the most interesting!)
 
-
+<br>
+<br>
 <div id="animation_canvas" class="box">
 
   <button id="button">Animate</button>
@@ -238,7 +259,8 @@ The interactive animation below demonstrates this. Enter any number between 6 an
 
 </div>
 
-
+<br>
+<br>
 
 
 Or look at it like a proof challenge you might have been given in highschool. To prove that at least one of either `a` or `b` must be less than `sqrt(N)` is to imagine a situation where they are not:
