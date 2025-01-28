@@ -247,7 +247,9 @@ a = sqrt(N)
 
 Another helpful visualization is to pair off the factors for a given value of `N` on a number line. Starting with low values of `a` the corresponding value for `b` will be very far away on the number line, but as you increase that value more and more the values get closer and closer together until finally you reach the square root. After the square root you will find that you're always pairing factors with numbers that are on the left, or smaller side of the square root. In this way the square root creates a dividing line between the smaller factors and the larger factors. All of the factors on the left side of the line must have a partner on the right side of the line and in turn all of the factors on the right side of the line have a partner on the left. 
 
-The interactive animation below demonstrates this. Enter any number between 6 and 100 and click the buttons to see the number line, factors, and square root of N. Notice how the paths between factors always cross over the line drawn by the square root of N. (Numbers with few factors are pretty boring, but numbers with lots of factors like 24, 36, etc are the most interesting!)
+The interactive animation below demonstrates this. Enter any number between 6 and 100 and click the buttons to see the number line, factors, and lime green line for the square root of N. Notice how the paths between factors always cross over the green line drawn by the square root of N. (Numbers with few factors are pretty boring, but numbers with lots of factors like 24, 36, etc are the most interesting!)
+
+*Note: This should work fine on mobile, but is a bit easier to see on a larger screen*
 
 <br>
 <br>
