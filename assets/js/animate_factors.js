@@ -30,7 +30,7 @@ var tick_width = 5;
 var tick_height = 35;
 var text_offset = 30;
 
-var draw = SVG().addTo("body").size(canvas_width, canvas_height);
+var draw = SVG().addTo("#animation_canvas").size(canvas_width, canvas_height);
 
 let btn = document.getElementById("button");
 btn.addEventListener("click", () => {

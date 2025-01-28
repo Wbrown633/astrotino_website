@@ -12,6 +12,8 @@ include_scripts: [
 
 ***
 
+*If you want to skip to the interactive bit click <a href="#animation_canvas">here!</a>*
+
 <br>
 <br>
 
@@ -22,12 +24,19 @@ Recently I came across this slight variation on what I assume is a fairly common
 
 To avoid completely giving away all the secrets, I only want to discuss the first solution that was provided:
 
+<br>
+<br>
+
 ```python
 For i from 2 to sqrt(N) inclusive:
 	if n % i == 0:
 		return False
 return True
-```
+``` 
+
+
+<br>
+<br>
 
 Even as someone who has not worked on any programming interview questions recently, I would say most of this solution pretty quickly made sense to me. In fact, it's really not that far from the brute force solution most programmers probably think of right away. But why are we stopping at the square root of N? For me, that wasn't clear at all.
 
@@ -68,18 +77,30 @@ When we say "evenly divisible" we mean that the division will result in a whole 
 ### Translate to Code
 
 First, let's just try to translate exactly the second statement into code : "A natural number that is only evenly divisible by 1 and itself". Let's check all those numbers. 
+
+<br>
+<br>
+
 ```python
 for i in range(2, N):
 	N % i
 ```
+<br>
+<br>
 
 First, remember that the `range()` function in python is **inclusive** on the starting side (in this case 2) and **exclusive** on the ending side (in this case N). Meaning this for loop is the same as writing this is any of the more C flavored languages:
+
+<br>
+<br>
 
 ```java
 for (int i; i++, i < N) {
 	N % i;
 }
 ```
+
+<br>
+<br>
 
 Second, a refresher on the `%` or modulo operator. The `%` operator returns the **remainder** of the division of two numbers. For example if you open up a [python REPL](https://realpython.com/python-repl/) you get the following: 
 
@@ -120,7 +141,7 @@ def check_if_N_is_prime(N):
 
 To get our short circuiting logic working correctly, we needed to add all of our logic into a function, but other than that nothing else has changed. And there you have it! this is a function that will check if a given number `N` is prime.
 
-![[Pasted image 20250108165626.png]]
+![Example Image](/assets/images/square_root_pics/Pasted image 20250108165626.png)
 
 And now, finally, we can talk about that square root. 
 
@@ -128,15 +149,16 @@ And now, finally, we can talk about that square root.
 
 First, let's look at what exactly this code is doing. 
 
-![[Pasted image 20250108181002.png]]
+![Example Image](/assets/images/square_root_pics/Pasted image 20250108181002.png)
+
 
 Here we can see the logical flow of the code and it properly short circuiting. Next let's take a look at how it looks when N is prime.
 
-![[Pasted image 20250108181244.png]]
+![Example Image](/assets/images/square_root_pics/Pasted image 20250108181244.png)
 
 Seems like a lot of work just to find a prime, can we do better? Look at how much worse it is as the values of the prime get higher!
 
-![[Pasted image 20250108181646.png]]
+![Example Image](/assets/images/square_root_pics/Pasted image 20250108181646.png)
 
 I actually had to zoom my browser window out a bit in google collab to fit all the output! But what we want to know is, is there a point in the loop where we can stop checking because we know that we've tried all possibilities? Can we do better than N - 1? Can we take advantage of that short circuiting logic for primes just like we did for non-primes? Let's take a look at that first definition of prime again:
 
@@ -207,6 +229,18 @@ Another helpful visualization is to pair off the factors for a given value of `N
 
 The interactive animation below demonstrates this. Enter any number between 6 and 100 and click the buttons to see the number line, factors, and square root of N. Notice how the paths between factors always cross over the line drawn by the square root of N. (Numbers with few factors are pretty boring, but numbers with lots of factors like 24, 36, etc are the most interesting!)
 
+
+<div id="animation_canvas" class="box">
+
+  <button id="button">Animate</button>
+  <button id="path_button">DrawPath</button>
+  <input type="text" id="ticks" name="ticks" required minlength="1" maxlength="3" size="10">
+
+</div>
+
+
+
+
 Or look at it like a proof challenge you might have been given in highschool. To prove that at least one of either `a` or `b` must be less than `sqrt(N)` is to imagine a situation where they are not:
 
 <br>
@@ -233,7 +267,7 @@ a x b > N  (Cannot be the case! We said in line 1 that they are equal!)
 
 So finally we can implement the correct solution. 
 
-![[Pasted image 20250108220111.png]]
+![Example Image](/assets/images/square_root_pics/Pasted image 20250108220111.png)
 
 That sure was a lot of work just for `O(sqrt(n))`. But I hope you enjoyed that explanation as much as I did writing it! And I trust you'd be ready to knock that interview question out of the park next time it comes up. 
 

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
-
+@import "native.css";
 
 * {
   font-family: 'Inter';
@@ -56,6 +56,14 @@ html{
   margin: auto;
   max-width: 700px;
   padding: 10px;
+}
+
+.blog-specific img {
+  max-width: 90%;
+  margin: 10px auto;
+  border: 2px solid #ddd;
+  padding: 5px;
+  border-radius: 8px;
 }
 
 .small-logo {
