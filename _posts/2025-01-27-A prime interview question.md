@@ -40,9 +40,9 @@ return True
 
 Even as someone who has not worked on any programming interview questions recently, I would say most of this solution pretty quickly made sense to me. In fact, it's really not that far from the brute force solution most programmers probably think of right away. But why are we stopping at the square root of N? For me, that wasn't clear at all.
 
-It only took a small amount of googling to confirm. Pretty quickly it became clear that this is an accepted way to solve this problem. Easy enough, case closed. This solution was more efficient than the other two proposed solutions because it was the only proposed solution that didn't consider all of the values for `i` between 2 and N. End of blog post ... right? Well if you'll humor me I think this is actually a pretty interesting question thats worth diving into for two reasons. 
+It only took a small amount of googling to confirm. Pretty quickly it became clear that this is an accepted way to solve this problem. Easy enough, case closed. This solution was more efficient than the other two proposed solutions because it was the only proposed solution that didn't consider all of the values for `i` between 2 and N. End of blog post ... right? Well if you'll humor me I think this is actually a pretty interesting question that is worth diving into for two reasons. 
 
-1. Despite the fact that it might seem like another "brain teaser" style interview question. This question does not actually require you to memorize the "one simple trick". It really only requires knowledge the definitions of primes and square roots.
+1. Despite the fact that it might seem like another "brain teaser" style interview question. This question does not actually require you to memorize the "one simple trick". It really only requires knowledge of the definitions of primes and square roots.
 2. I think if you take the time to fully understand how programming questions like this one tick, you're much more likely to remember the answer if it comes up in an interview down the line. 
 
 Below is an animation I made that helps to demonstrate why this solution works! Enter any number between 6 and 100 and click the buttons to see the number line, factors, and lime green line for the square root of N. Notice how the paths between factors always cross over the green line drawn by the square root of N. (Numbers with few factors are pretty boring, but numbers with lots of factors like 24, 36, etc are the most interesting!)
@@ -187,7 +187,7 @@ First, let's look at what exactly this code is doing.
 ![Example Image](/assets/images/square_root_pics/Pasted image 20250108181002.png)
 
 
-Here we can see the logical flow of the code and it properly short circuiting. Next let's take a look at how it looks when N is prime.
+Here we can see the logical flow of the code properly short circuiting. Next let's take a look at how it looks when N is prime.
 
 ![Example Image](/assets/images/square_root_pics/Pasted image 20250108181244.png)
 
@@ -271,7 +271,7 @@ The interactive animation from the beginning of the article demonstrates this. I
 
 
 
-Or look at it like a proof challenge you might have been given in highschool. To prove that at least one of either `a` or `b` must be less than `sqrt(N)` is to imagine a situation where they are not:
+Or look at it like a proof challenge you might have been given in high school. To prove that at least one of either `a` or `b` must be less than `sqrt(N)` is to imagine a situation where they are not:
 
 <br>
 <br>
