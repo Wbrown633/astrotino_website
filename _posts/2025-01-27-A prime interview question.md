@@ -45,11 +45,26 @@ It only took a small amount of googling to confirm. Pretty quickly it became cle
 1. Despite the fact that it might seem like another "brain teaser" style interview question. This question does not actually require you to memorize the "one simple trick". It really only requires knowledge the definitions of primes and square roots.
 2. I think if you take the time to fully understand how programming questions like this one tick, you're much more likely to remember the answer if it comes up in an interview down the line. 
 
-Now an astute reader may notice I'm putting a lot of weight on "interview questions". And that's a fair point. I don't think this exact problem would ever come up when you're writing code day to day. But I have two responses to this very standard line of "when will I use this in the real world teacher?!?" 
+Below is an animation I made that helps to demonstrate why this solution works! Enter any number between 6 and 100 and click the buttons to see the number line, factors, and lime green line for the square root of N. Notice how the paths between factors always cross over the green line drawn by the square root of N. (Numbers with few factors are pretty boring, but numbers with lots of factors like 24, 36, etc are the most interesting!)
 
-First, interviews are very real! As anyone looking for a job now or recently can assure you, these questions do come up and regardless of how you feel about them you should be prepared. And I think knowing how to work through these toy problems instead of just memorizing answers puts you in a much better position to answer them with confidence in future interviews. Writing this blog post has certainly made me feel much better about my knowledge! 
 
-Second, and perhaps more importantly, I think this is neat! I'm hoping to provide you with the same lightbulb moment I had while looking into this solution. Let see if I can manage it! 
+*Note: This should work fine on mobile, but is a bit easier to see on a larger screen*
+
+<br>
+<br>
+<div id="animation_canvas" class="box">
+
+  <button id="button">Animate</button>
+  <button id="path_button">DrawPath</button>
+  <input type="text" id="ticks" name="ticks" required minlength="1" maxlength="3" size="10">
+
+</div>
+
+<br>
+<br>
+
+
+The rest of this post is going to be a deep dive into proving it!
 
 ### Define the Problem
 
@@ -247,25 +262,13 @@ a = sqrt(N)
 
 Another helpful visualization is to pair off the factors for a given value of `N` on a number line. Starting with low values of `a` the corresponding value for `b` will be very far away on the number line, but as you increase that value more and more the values get closer and closer together until finally you reach the square root. After the square root you will find that you're always pairing factors with numbers that are on the left, or smaller side of the square root. In this way the square root creates a dividing line between the smaller factors and the larger factors. All of the factors on the left side of the line must have a partner on the right side of the line and in turn all of the factors on the right side of the line have a partner on the left. 
 
-The interactive animation below demonstrates this. Enter any number between 6 and 100 and click the buttons to see the number line, factors, and lime green line for the square root of N. Notice how the paths between factors always cross over the green line drawn by the square root of N. (Numbers with few factors are pretty boring, but numbers with lots of factors like 24, 36, etc are the most interesting!)
+The interactive animation from the beginning of the article demonstrates this. In fact an example like that one is how I first came up with the idea to make it!
+
+
+*If you want to jump back to the animation click <a href="#animation_canvas">here!</a>*
 
 <br>
 
-
-*Note: This should work fine on mobile, but is a bit easier to see on a larger screen*
-
-<br>
-<br>
-<div id="animation_canvas" class="box">
-
-  <button id="button">Animate</button>
-  <button id="path_button">DrawPath</button>
-  <input type="text" id="ticks" name="ticks" required minlength="1" maxlength="3" size="10">
-
-</div>
-
-<br>
-<br>
 
 
 Or look at it like a proof challenge you might have been given in highschool. To prove that at least one of either `a` or `b` must be less than `sqrt(N)` is to imagine a situation where they are not:
