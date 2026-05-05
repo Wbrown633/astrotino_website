@@ -1,99 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/images/AstroTinoSmall.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Will Brown</title>
+  <meta name="description" content="About Will Brown — mechatronics engineer based in Knoxville, TN." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav class = "topnav">
-            <a class = "topnav-left" href="index.html">Home</a>
-            <div class ="topnav-right">
-            <a  class = "topnav-right" href="blog.html"> Blog</a>
-            <a class ="topnav-right" href="contact.html"> Contact</a>
-            <a class ="topnav-right" href="about.html"> About</a>
+
+  <!-- NAV -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-name" href="index.html">Will Brown</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="assets/resume/William_Brown_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+        <li><a href="mailto:will@astrotino.com">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="site-wrap">
+      <section class="about-section">
+
+        <div class="section-label anim anim-1">
+          <span>About</span>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-body anim anim-2">
+            <h1 class="about-heading">
+              Engineer, maker,<br><em>perpetual tinkerer.</em>
+            </h1>
+
+            <p>
+              I'm a mechatronics engineer based in Knoxville, Tennessee. My work
+              sits at the intersection of mechanical design, embedded electronics,
+              and the software that connects them — which is exactly where I want
+              to be.
+            </p>
+            <p>
+              I've spent the past several years doing R&D for medical device and
+              life science clients through my consulting practice, taking products
+              from early concept through working prototype. That means I'm
+              comfortable with ambiguity, tight timelines, and the kind of
+              problem-solving that happens when a design meets reality on the
+              bench.
+            </p>
+            <p>
+              On the tools side: I design in SolidWorks, simulate in OpenFOAM
+              and ANSYS, write firmware for ESP32 and Arduino targets, and do most
+              of my data work in Python. I'm also comfortable laying out custom
+              PCBs and have a decent soldering station to show for it.
+            </p>
+            <p>
+              Outside of engineering I spend time woodturning, baking sourdough,
+              and keeping up a small electronics lab at home. I'm currently
+              looking for full-time mechatronics or systems engineering roles
+              where I can build things that matter.
+            </p>
+
+            <div style="margin-top: 2rem;">
+              <a class="btn btn-primary" href="assets/resume/William_Brown_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
             </div>
-        </nav>
-    </header> 
+          </div>
 
-    <div class="headshot">
-        <img class="headshot-img" src="/assets/images/Will_Brown_Headshot.jpeg">
-    </div>
-   
-    <div class="content-text">
+          <!-- SIDEBAR -->
+          <aside class="about-sidebar anim anim-3" aria-label="Quick facts">
 
-    <h3>About Me</h3>
-    <p>My name is Will Brown and I’m a mechanical engineer who specializes in working with medical device companies and doing 
-        early stage R&D. I am currently considering both full-time roles and contract work. I have extensive experience working with startups of all sizes, from directly working with a founder 
-        that has a germ of an idea, to working as a single contributor as part of a much larger team. I also firmly believe that 
-        community is at the heart of what we do as small companies. So if I can’t help you, I’d love to try to put you in contact 
-        with someone I think could!
+            <div class="sidebar-block">
+              <div class="sidebar-label">Location</div>
+              <ul class="sidebar-list">
+                <li>Knoxville, Tennessee</li>
+              </ul>
+            </div>
 
-        If you'd like to see some more specific examples of my prior experience you can check out my portfolio 
-        <a href="https://docs.google.com/presentation/d/14dklCirzF61AGXKB6FsNwEA0A5mS3Cw3gdbQqLWmn44/edit?usp=sharing" target="_blank">
-            here</a>.
-    </p>
+            <div class="sidebar-block">
+              <div class="sidebar-label">Status</div>
+              <ul class="sidebar-list">
+                <li><span class="status-pill">Open to work</span></li>
+              </ul>
+            </div>
 
-    <h3>The Name</h3>
+            <div class="sidebar-block">
+              <div class="sidebar-label">Mechanical</div>
+              <ul class="sidebar-list">
+                <li>SolidWorks</li>
+                <li>OpenFOAM</li>
+                <li>ANSYS Fluent</li>
+                <li>Microfluidics</li>
+                <li>3D Printing / FDM</li>
+              </ul>
+            </div>
 
-    The name AstroTino is a mash up of things I love.
+            <div class="sidebar-block">
+              <div class="sidebar-label">Embedded</div>
+              <ul class="sidebar-list">
+                <li>ESP32 / Arduino</li>
+                <li>Custom PCB Design</li>
+                <li>I²C, SPI, UART</li>
+                <li>HX711, ToF Sensors</li>
+                <li>Firmware (C / C++)</li>
+              </ul>
+            </div>
 
-    </div>
+            <div class="sidebar-block">
+              <div class="sidebar-label">Software</div>
+              <ul class="sidebar-list">
+                <li>Python (primary)</li>
+                <li>FastAPI / Jinja2</li>
+                <li>OpenCV</li>
+                <li>Pandas / NumPy</li>
+                <li>Flutter / Dart</li>
+              </ul>
+            </div>
 
-    <div class="astrotino-explanation-container">
+            <div class="sidebar-block">
+              <div class="sidebar-label">Contact</div>
+              <ul class="sidebar-list">
+                <li><a href="mailto:will@astrotino.com" style="color: inherit;">will@astrotino.com</a></li>
+              </ul>
+            </div>
 
-        <div class="about-picture-and-text">
-        <div class= "about-picture-triple">
-            <img class="grid-image" src="/assets/images/rocket_image.png">
+          </aside>
         </div>
 
-        <div class="grid-text">
+      </section>
+    </div><!-- /.site-wrap -->
+  </main>
 
-
-            <p>
-                <b>Astro</b> - space! I love space, always have and probably always will. Working with
-                NASA on a few of my projects has been a dream come true and with any luck some of my work will be flying on the ISS sometime in the future,
-                fingers crossed!
-            </p>
-
-        </div>
-        </div>
-
-        <div class="about-picture-and-text">
-        <div class= "about-picture-triple">
-            <img class="grid-image" src="/assets/images/tico_picture.jpg">
-        </div>
-        <div class="grid-text">
-            <p>
-                <b>Ti</b> - Tico is my wonderful cat, he's also the yellow figure in our logo and makes sure I take ample breaks during the day to play with him.
-            </p>
-        </div>
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 Will Brown</span>
+      <ul class="footer-links">
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:will@astrotino.com">Email</a></li>
+      </ul>
     </div>
-        
-    <div class="about-picture-and-text">
-    <div class= "about-picture-triple">
-            <img class="grid-image" src="/assets/images/nova_picture.jpg">
-   
-        <div class="grid-text">
-        <p>
-            <b>No</b> - Nova is my angel of a dog. She is the sweetest dog that simply wants to curl up in your lap all day and go whereever you go, especially if there will be
-            belly rubs and snacks. In fact she's in my lap curled up as I write this.
-        </p>
-        </div>
-        
-    </div>
-
-    </div>
-</div>
-    <div class="content-text">
-    <p> 
-        That's it! That's the name, I didn't think about SEO or pronunciation (obviously) just went with
-        something fun!
-    </p>
-    </div>
+  </footer>
 
 </body>
 </html>

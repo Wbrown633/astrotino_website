@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fluorescence Detection System — Will Brown</title>
+  <meta name="description" content="Fluorescence-based diagnostic system design — Will Brown, Mechatronics Engineer." />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-name" href="../index.html">Will Brown</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Work</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../assets/resume/William_Brown_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+        <li><a href="mailto:will@astrotino.com">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="site-wrap">
+      <article class="project-detail">
+
+        <!-- Back link + meta -->
+        <div class="project-meta-bar anim anim-1">
+          <a class="project-back" href="../index.html">All work</a>
+        </div>
+
+        <h1 class="anim anim-2">Fluorescence Detection System</h1>
+
+        <div class="project-detail-meta anim anim-2">
+          <span class="tag">Embedded Systems</span>
+          <span class="tag">Optics</span>
+          <span class="tag">Python</span>
+          <span class="tag">Custom PCB</span>
+        </div>
+
+        <!-- Hero image: replace src with your actual image path -->
+        <!--
+        <img
+          class="project-hero-img"
+          src="../assets/images/fluorescence-hero.jpg"
+          alt="Fluorescence detection system hardware"
+        />
+        -->
+
+        <!-- Placeholder while you don't have a photo yet -->
+        <div class="project-img-placeholder anim anim-3">
+          <span>Project photo — replace with your image</span>
+        </div>
+
+        <!-- Content + sidebar -->
+        <div class="project-content anim anim-4">
+
+          <div class="prose">
+            <h2>Overview</h2>
+            <p>
+              Designed and optimized a fluorescence-based detection system for a
+              life science client, with the goal of enabling quantitative
+              diagnostic readings in a compact, portable form factor.
+            </p>
+            <p>
+              The system integrates off-the-shelf evaluation boards with custom
+              analog front-end circuitry and purpose-built firmware to achieve
+              the signal-to-noise ratio required for clinical-grade measurements.
+            </p>
+
+            <h2>The problem</h2>
+            <p>
+              Existing benchtop fluorescence readers were too large and expensive
+              for point-of-care deployment. The client needed a solution that
+              could be manufactured at low cost without sacrificing measurement
+              fidelity.
+            </p>
+
+            <h2>My approach</h2>
+            <p>
+              I started with a breadboard prototype using an off-the-shelf
+              photodiode amplifier module to characterize the optical path and
+              validate the measurement concept. Once the signal chain was
+              understood, I designed a custom PCB integrating the LED driver,
+              transimpedance amplifier, and microcontroller onto a single board.
+            </p>
+            <ul>
+              <li>Characterized LED excitation spectrum vs. fluorophore absorption</li>
+              <li>Designed low-noise TIA circuit with programmable gain</li>
+              <li>Wrote firmware for automated calibration and data logging</li>
+              <li>Built Python data pipeline for post-processing and visualization</li>
+            </ul>
+
+            <h2>Outcome</h2>
+            <p>
+              The final system achieved the target detection limit at under
+              one-fifth the cost of the incumbent benchtop solution, and was
+              compact enough to be carried in a field kit.
+            </p>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="detail-sidebar" aria-label="Project details">
+
+            <div class="sidebar-block">
+              <div class="sidebar-label">Role</div>
+              <ul class="sidebar-list">
+                <li>Lead Engineer</li>
+              </ul>
+            </div>
+
+            <div class="sidebar-block">
+              <div class="sidebar-label">Deliverables</div>
+              <ul class="sidebar-list">
+                <li>Custom PCB</li>
+                <li>Embedded firmware</li>
+                <li>Python data pipeline</li>
+                <li>Characterization report</li>
+              </ul>
+            </div>
+
+            <div class="sidebar-block">
+              <div class="sidebar-label">Tools</div>
+              <ul class="sidebar-list">
+                <li>KiCad (PCB layout)</li>
+                <li>ESP32 / C++</li>
+                <li>Python / Pandas</li>
+                <li>SolidWorks (enclosure)</li>
+              </ul>
+            </div>
+
+            <div class="sidebar-block">
+              <div class="sidebar-label">Context</div>
+              <ul class="sidebar-list">
+                <li>Client R&D project</li>
+                <li>Medical diagnostics</li>
+              </ul>
+            </div>
+
+          </aside>
+        </div>
+
+        <!-- Next project nav -->
+        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 0.5px solid rgba(26,26,24,0.12); display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-family: 'DM Mono', monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: #9a9a94;">Next project</span>
+          <a href="colorimetric-cv.html" class="btn btn-ghost">Colorimetric CV App →</a>
+        </div>
+
+      </article>
+    </div><!-- /.site-wrap -->
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 Will Brown</span>
+      <ul class="footer-links">
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:will@astrotino.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
